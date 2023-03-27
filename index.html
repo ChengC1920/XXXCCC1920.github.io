@@ -52,7 +52,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-03-27 13:11:33'
+  postUpdate: '2023-03-27 13:19:55'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -156,7 +156,191 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/Redis/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:08:51.016Z" title="Created 2023-03-27 13:08:51">2023-03-27</time></span></div><div class="content">Redisredis线程模型redis6.0之前
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统">操作系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:54.693Z" title="Created 2023-03-27 13:14:54">2023-03-27</time></span></div><div class="content">
+abbrlink: 6一、进程1、定义进程（进程实体）由程序段、数据段、PCB三部分组成（进程是动态的，进程实体是静态的）
+一个程序运行需要的代码指令放在程序段，需要的变量放在数据段，而不同程序对应不同的程序段和数据段由PCB来存放。
+
+
+2、进程的组织链接方式
+
+索引方式
+
+3、进程的状态与转换进程的状态
+三个基本状态
+
+运行态（Running）：占有CPU,并在CPU上运行
+就绪态（Ready）：已经具备运行的条件，但没有空闲的CPU所以暂时不能运行
+阻塞态（Waiting&#x2F;Blocked）：因等待某一事件而暂时不能运行
+
+其他状态
+
+创建态（New）：操作系统需要完成创建进程，分配其所需要的内存空间等系统资源（初始化PCB、程序段、数据段等）
+终止态（Terminated）：进程运行结束（包括因为bug导致），操作系统需要完成撤销进程相关资源（资源回收、撤销进程PCB等）
+
+
+4、进程控制概念：进程状态的切换
+进程控制用原语实现
+
+原语用关&#x2F;开中断来实现
+原语是一种特殊的程序
+原语具有原子性，不可中断
+
+5、进程通信共享内存操作系统在内存中提供了一个共享空间 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="计算机网络">计算机网络</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:54.690Z" title="Created 2023-03-27 13:14:54">2023-03-27</time></span></div><div class="content">一、概述节点：
+
+主机及其上运行的应用程序
+路由器（网络层）、交换机（链路层）、负载均衡等网络交换设备
+
+边：通信链路
+
+接入网链路：主机连接到互联网的链路
+主干链路：路由器间的链路
+
+网络：
+
+节点和边构成
+
+协议：
+
+网络传输的标准
+
+🤔互联网是什么？
+从结构上看：
+
+节点和边
+
+从服务上看：
+
+分布式应用
+为分布式应用提供通讯服务的基础设施
+
+
+二、应用层1、socketTCP上的套接字（socket）
+
+在建立TCP连接后，客户端和服务端都会创建一个socket值来代表这个会话关系
+4元组：源IP，源port，目标IP，目标port
+
+2、HTTP1.0&#x2F;HTTP1.1
+非持久连接
+
+最多只有一个对象在TCP连接上发送
+下载多个对象需要多个TCP连接
+HTTP1.0是非持久连接
+
+持久连接
+
+多个对象可以在一个TCP连接上传输
+HTTP1.1是持久连接
+
+Cookies:维护状态
+客户端第一次访问服务器，服务器会生成一个cookie值放在响应首部发送给客户端，服务器和客户端都会存下这一值，客户端下次访问会带上cookie来找回状态。
+Web缓存
+
+
+加快用户访问速度 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/Spring/" title="Spring">Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.661Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">Spring轻量级开源框架
+侵入性低
+IOC和AOP
+IOC控制反转
+将对象的创建和实例化交给spring容器来管理
+@Compenet 作用于类  @Bean 作用于方法
+@Autowired 和 @Resource
+
+@Autowired默认byType 用@qualifier指定名称
+@Resource默认byName 用name属性指定名称
+
+bean的作用域
+
+singleton 单例
+prototyoe 每次获取创建一个新的bean实例
+request
+session
+websocket
+
+单例bean会有线程安全问题
+解决办法
+
+在bean中尽量不定义可变的成员变量
+在类中定义一个Thread local成员变量，将需要的可变成员变量放在里面
+
+AOP面向切面编程
+AOP(Aspect-Oriented Programming，面向切面编程) 能够将那些与业务无关，却为业务模块所共同调用的逻辑或责任（例如事务处理、日志管理、权限控制等）封装起来，便于减少系统的重复代码，降低模块间的耦合度，并有利于未来的可拓展性和可维护性。
+
+设计模式工厂设计模式 : Spring 使用工 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/RabbitMQ/" title="RabbitMQ">RabbitMQ</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.658Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">RabbitMQ整体上是一个生产者与消费者模型，主要负责接收、存储和转发消息。
+
+producer、consumer生产消息和消费消息
+消息由两部分组成
+
+消息头（Label）：存放一系列可选属性，routing-key、priority、delivery-mode（指出该消息可能需要持久化存储）等
+消息体（payLoad）：不透明
+
+Exchange用来接收生产者发送的消息并将这些消息路由给服务器中的队列中，如果路由不到，或许会返回给 Producer(生产者) ，或许会被直接丢弃掉 。
+
+生产者将消息发给交换器的时候，一般会指定一个 **RoutingKey(路由键)**，用来指定这个消息的路由规则，而这个 RoutingKey 需要与交换器类型和绑定键(BindingKey)联合使用才能最终生效。
+RabbitMQ 中通过 Binding(绑定) 将 Exchange(交换器) 与 Queue(消息队列) 关联起来，在绑定的时候一般会指定一个 BindingKey(绑定建) ,这样 RabbitMQ 就知道如何正确将消息路由到队列了
+
+四种交换机类型
+fanout（不用匹配）：
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/MySQL%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8B+%E6%A0%91%EF%BC%9F/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.656Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">MySQL为什么使用B+树？二叉排序树（BST）：不平衡查询时间取决于树高，平均时间复杂度是O（lgn）。但BST可能因为长得歪而变得不平衡；
+如下图退化为了链表，时间复杂度为O（n）
+
+平衡二叉树（AVL）：旋转耗时AVL 树是严格的平衡二叉树，所有节点的左右子树高度差不能超过 1；AVL 树查找、插入和删除在平均和最坏情况下都是 O(lgn)。
+AVL 实现平衡的关键在于旋转操作：插入和删除可能破坏二叉树的平衡，此时需要通过一次或多次树旋转来重新平衡这个树。当插入数据时，最多只需要 1 次旋转(单旋转或双旋转)；但是当删除数据时，会导致树失衡，AVL 需要维护从被删除节点到根节点这条路径上所有节点的平衡，旋转的量级为 O(lgn)。
+由于旋转的耗时，AVL 树在删除数据时效率很低 ；在删除操作较多时，维护平衡所需的代价可能高于其带来的好处，因此 AVL 实际使用并不广泛。
+应用于windows进程管理
+红黑树（RBT）
+与 AVL 树相比，红黑树的查询效率会有所下降，这是因为树的平衡性变差，高度更高。但红黑树的删除效率大大提高了，因为红黑树同时引入了颜色，当插入或删除数据时，只需要 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/Mysql%E6%97%A5%E5%BF%97/" title="MySQL日志">MySQL日志</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.654Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">slow query log慢查询日志记录了执行时间超过 long_query_time（默认是 10s，通常设置为1s）的所有查询语句，在解决 SQL 慢查询（SQL 执行时间过长）问题的时候经常会用到。
+12345678910# 对慢SQL进行分析EXPLAIN# 查询慢查询日志是否开启show variables like &quot;slow_query_log&quot;;# 打开慢查询日志 （默认是关闭的）SET GLOBAL slow_query_log=ON# 查询查询消耗多少时间才被定义为慢查询SHOW VARIABLES LIKE &#x27;%long_query_time%&#x27;# 查询当前慢查询语句的个数SHOW GLOBAL STATUS LIKE &#x27;%Slow_queries%&#x27;
+
+MySQL官方的慢查询分析调优工具：mysqldumpslow
+binlogbinlog(binary log 即二进制日志文件) 主要记录了对 MySQL 数据库执行了更改的所有操作(数据库执行的所有 DDL 和 DML 语句)，包括表结构变更（CR ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/MySQL%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB%E4%B8%8E%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/" title="MySQL读写分离与分库分表">MySQL读写分离与分库分表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.652Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">读写分离读写分离的好处读写分离主要是为了将对数据库的读写操作分散到不同的数据库节点上。 这样的话，就能够小幅提升写性能，大幅提升读性能。
+读写分离的问题与解决读写分离对于提升数据库的并发非常有效，但是，同时也会引来一个问题：主库和从库的数据存在延迟，比如你写完主库之后，主库的数据同步到从库是需要时间的，这个时间差就导致了主库和从库的数据不一致性问题。这也就是我们经常说的 主从同步延迟 。
+解决方法：
+1、强制将请求路由到主库处理
+从库的数据过期了，那我就直接从主库读取.比如 Sharding-JDBC 就是采用的这种方案。通过使用 Sharding-JDBC 的 HintManager 分片键值管理器，我们可以强制使用主库。
+2、延迟读取
+既然主从同步存在延迟，那我就在延迟之后读取啊，比如主从同步延迟 0.5s,那我就 1s 之后再读取数据。
+读写分离实现1、部署多台数据库，选择其中的一台作为主数据库，其他的一台或者多台作为从数据库。
+2、保证主数据库和从数据库之间的数据是实时同步的，这个过程也就是我们常说的主从复制。
+3、系统将写请求交给主数据库处理，读请求交给从数据库处理。
+
+落实 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/JVM/" title="JVM">JVM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.650Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">内存区域JDK1.8之前
+
+JDK1.8之后
+
+程序计数器：不会出现OutOfMemoryError
+
+字节码解释器通过改变程序计数器来一次读取指令，从而实现代码的流程控制，如顺序执行、选择、循环、异常处理。
+在多线程的情况下，程序计数器用于记录当前线程执行的位置，从而实现线程被切换回来的时候能够直到该线程上次运行到哪了。
+
+虚拟机栈除了Native方法调用外，其他所有的Java方法调用都是通过栈来实现。每有一个方法调用就有一个栈帧被压入栈，调用结束就弹出
+
+
+栈帧：
+
+局部变量表：主要存放了编译期可知的各种数据类型（boolean、byte、char、short、int、float、long、double）、对象引用（reference 类型，它不同于对象本身，可能是一个指向对象起始地址的引用指针，也可能是指向一个代表对象的句柄或其他与此对象相关的位置）。
+
+操作数栈：方法调用的中转站，存放方法执行过程中产生的中间计算结果
+
+动态链接：用于一个方法调用其他方法的场景，Class 文件的常量池里保存有大量的符号引用比如方法引用的符号引用。当一个方法要调用其他方法，需要将常量池中指向方法 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/ConcurrentHashmap/" title="ConcurrentHashMap">ConcurrentHashMap</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:14:32.647Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></span></div><div class="content">并发ConcurrentHashmapHashtable和ConcurrentHashmap区别
+
+底层数据结构
+
+Hashtable 链表+数组
+
+ConcurrentHashmap
+jdk1.7  分段数组 + 链表
+
+jdk1.8  数组+链表&#x2F;红黑树
+
+
+线程安全的方式
+
+Hashtable：synchronized锁住整个同步方法，一个线程使用put，另一个线程不能put，也不能get，竞争激烈效率低下
+ConcurrentHashmap：
+jdk1.7：对整个桶数组进行了分段segment，每一把锁只锁容器其中的一部分数据，多线程访问不同数据段的数据，就不会存在锁竞争
+jdk1.8：摒弃了Segment概念，直接用Node数组 + 链表 + 红黑树，并发控制使用synchronized和CAS来操作。
+java8中，锁粒度更细，synchronized只锁定当前链表或红黑二叉树的首节点，只要hash不冲突就不会产生并发，效率大幅度提升
+1.8中链表转红黑树Node只能用于链表的情况，红黑树需要使用TreeNode，当链表冲突达到一定长度的时候就会发生转换。
+Tre ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/Redis/" title="Redis">Redis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:08:51.016Z" title="Created 2023-03-27 13:08:51">2023-03-27</time></span></div><div class="content">Redisredis线程模型redis6.0之前
 单线程（网络IO&#x2F;执行命令）
 因为redis在内存中，瓶颈不是cpu所以不需要多线程，多线程会增加复杂度，带来并发和死锁的问题，线程切换带来资源消耗
 redis6.0之后
@@ -178,17 +362,4 @@ RDB快照
 执行bgsave创建一个子进程来生成RDB文件，不会阻塞主进程
 利用写时复制来解决 进行rdb快照时，主进程也能继续执行指令
 混合模式
-先用rdb快照 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">测试文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T05:04:21.000Z" title="Created 2023-03-27 13:04:21">2023-03-27</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/27/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-27T03:26:19.353Z" title="Created 2023-03-27 11:26:19">2023-03-27</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-
-More info: Writing
-Run server1$ hexo server
-
-More info: Server
-Generate static files1$ hexo generate
-
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-
-More info: Deployment
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/Redis/" title="Hello World">Hello World</a><time datetime="2023-03-27T05:08:51.016Z" title="Created 2023-03-27 13:08:51">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" title="测试文章">测试文章</a><time datetime="2023-03-27T05:04:21.000Z" title="Created 2023-03-27 13:04:21">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/hello-world/" title="Hello World">Hello World</a><time datetime="2023-03-27T03:26:19.353Z" title="Created 2023-03-27 11:26:19">2023-03-27</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-27T05:11:33.498Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+先用rdb快照 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="操作系统">操作系统</a><time datetime="2023-03-27T05:14:54.693Z" title="Created 2023-03-27 13:14:54">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="计算机网络">计算机网络</a><time datetime="2023-03-27T05:14:54.690Z" title="Created 2023-03-27 13:14:54">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/Spring/" title="Spring">Spring</a><time datetime="2023-03-27T05:14:32.661Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/RabbitMQ/" title="RabbitMQ">RabbitMQ</a><time datetime="2023-03-27T05:14:32.658Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/27/MySQL%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8B+%E6%A0%91%EF%BC%9F/" title="Hello World">Hello World</a><time datetime="2023-03-27T05:14:32.656Z" title="Created 2023-03-27 13:14:32">2023-03-27</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">12</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">12</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-27T05:19:55.414Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
